@@ -10,11 +10,13 @@ class Point{
     {
         x=0;
         y=0;
+        cout<<"Default called"<<endl;
     }
     Point(int a,int b)
     {
-        x=a,
+        x=a;
         y=b;
+        cout<<"Paramerixed called"<<endl;
     }
     void display()
     {
