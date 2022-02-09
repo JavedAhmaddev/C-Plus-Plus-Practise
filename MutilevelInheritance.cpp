@@ -10,6 +10,9 @@ public:
     Student(){
         cout<<"Student constructor is called"<<endl;
     }
+    ~Student(){
+        cout<<"Student Destructor is called"<<endl;
+    }
     void set_roll_number(int);
     void get_roll_number(void);
 };
@@ -34,6 +37,9 @@ public:
     Exam(){
         cout<<"Exam constructor is called"<<endl;
     }
+    ~Exam(){
+        cout<<"Exam Destructor is called"<<endl;
+    }
     void set_marks(float, float);
     void get_marks(void);
 };
@@ -56,6 +62,9 @@ class Result : public Exam
 public:
     Result(){
         cout<<"Result constructor is called"<<endl;
+    }
+    ~Result(){
+        cout<<"Result Destructor is called"<<endl;
     }
     void display_results()
     {
